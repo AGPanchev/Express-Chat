@@ -10,8 +10,7 @@ app.get('/', function(req, res){
 
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){
-    var now = moment().format('MMMM Do YYYY, h:mm:ss a')
-    io.emit('chat message', now + ' - '+ msg);
+    io.emit('chat message', msg);
   });
 });
 
