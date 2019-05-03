@@ -1,0 +1,22 @@
+{
+  "name": "Chat-app",
+  "description": "Chat app build with Express.js and socket.io",
+  "website": "https://antonio-chat-app.herokuapp.com/",
+  "repository": "https://github.com/AGPanchev/Express-Chat",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "success_url": "/",
+  "keywords": [
+    "node",
+    "express",
+    "socket.io",
+    "realtime",
+    "websocket"
+  ],
+  "scripts": {
+  },
+  "addons": [
+  ],
+  "env": {
+    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-nodejs"
+  }
+}
