@@ -30,6 +30,8 @@
           return false;
         });
         socket.on('chat message', function(msg){
+
+          var moment = require('moment');
           var now = moment().format('MMMM Do YYYY, h:mm:ss a')
 
           $('#messages').append($('<li>').text(now + ' - ' + msg));
