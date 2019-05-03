@@ -30,8 +30,7 @@
           return false;
         });
         socket.on('chat message', function(msg){
-          var now = new Date();
-          now.format("yyyy/MM/dd hh:mm:ss TT");
+          var now = moment().format('MMMM Do YYYY, h:mm:ss a')
 
           $('#messages').append($('<li>').text(now + ' - ' + msg));
           window.scrollTo(0, document.body.scrollHeight);

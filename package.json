@@ -4,6 +4,7 @@
   "description": "Chat app build with Express.js and socket.io",
   "dependencies": {
     "express": "^4.15.2",
+    "moment": "^2.24.0",
     "socket.io": "^1.7.3"
   },
   "scripts": {
