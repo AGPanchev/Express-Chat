@@ -5,12 +5,15 @@ var port = process.env.PORT || 3000;
 var moment = require('moment');
 
 app.get('/', function(req, res){
+
   res.sendFile(__dirname + '/index.html');
 });
 
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){
-    io.emit('chat message', msg);
+    var now = moment().format('MMMM Do YYYY, h:mm:ss a')
+
+    io.emit('chat message', now + ' - '+ msg);
   });
 });
 
